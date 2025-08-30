@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "2.6.6"
 gem "mimemagic", github: "mimemagicrb/mimemagic", ref: "01f92d86d15d85cfd0f20dabd025dcbd36a8a60f"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.0.2", ">= 6.0.2.1"
+gem "rails", "~> 7.1.5", ">= 7.1.5.2"
 # Use postgresql as the database for Active Record
 gem "pg", ">= 0.18", "< 2.0"
 # Use Puma as the app server
@@ -15,7 +15,7 @@ gem "sass-rails", ">= 6"
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem "turbolinks", "~> 5"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "jbuilder", "~> 2.7"
+gem "jbuilder", "~> 2.10", ">= 2.10.1"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -34,34 +34,34 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem "web-console", ">= 3.3.0"
+  gem "web-console", ">= 4.0.2"
 end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", ">= 2.15"
+  gem "capybara", ">= 3.32.0"
   gem "selenium-webdriver"
   # Easy installation and use of web drivers to run system tests with browsers
-  gem "webdrivers"
+  gem "webdrivers", ">= 4.3.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "activeadmin"
+gem "activeadmin", ">= 3.1.0"
 
 # Plus integrations with:
-gem "devise"
+gem "devise", ">= 4.7.2"
 
-gem "bootstrap", "~> 4.3.1"
+gem "bootstrap", "~> 4.4.1"
 
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.4.0"
 
 gem "active_admin_flat_skin", github: "ayann/active_admin_flat_skin"
 
-gem "webpacker", ">= 4.x"
+gem "webpacker", ">= 5.1.0"
 
-gem "responders"
+gem "responders", ">= 3.0.1"
 
 gem "msfrpc-client"
 
